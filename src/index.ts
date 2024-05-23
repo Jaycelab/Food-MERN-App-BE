@@ -10,8 +10,8 @@ mongoose
   .then(() => console.log("Connected to database!"));
 
 const app = express();
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 // /api/my/user
 app.use("/api/my/user", myUserRoute);
